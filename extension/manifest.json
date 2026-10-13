@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Full Width New PR Files",
+  "version": "1.0.0",
+  "description": "Give newly added files the full width in GitHub's split pull request diffs.",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*", "https://*.ghe.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

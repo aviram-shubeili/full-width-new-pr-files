@@ -1,0 +1,37 @@
+name: Bug report
+description: Report a diff layout that does not expand correctly.
+labels: [bug]
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened?
+      description: Describe what you expected and what you saw.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Chrome and extension versions
+      placeholder: Chrome 140, extension 1.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: view
+    attributes:
+      label: Diff view
+      options: [Split, Unified]
+    validations:
+      required: true
+  - type: dropdown
+    id: file
+    attributes:
+      label: File change type
+      options: [New file, Modified file, Deleted file, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example or screenshot
+      description: A public PR URL or screenshot helps. Remove private code and account information.

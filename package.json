@@ -1,0 +1,24 @@
+{
+  "name": "full-width-new-pr-files",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Chrome extension that gives new files the full width in GitHub split PR diffs.",
+  "license": "MIT",
+  "author": "Aviram Shubeili",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aviram-shubeili/full-width-new-pr-files.git"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test tests/extension.test.cjs",
+    "check": "node --check extension/content.js && node --check scripts/package.cjs && node --check tests/extension.test.cjs",
+    "package": "node scripts/package.cjs"
+  },
+  "devDependencies": {
+    "fflate": "0.8.3",
+    "playwright": "1.64.0"
+  }
+}

@@ -1,0 +1,27 @@
+/* Only tables positively identified as new split-diff files receive overrides. */
+table.fwpr-added-file {
+  width: 100% !important;
+  table-layout: fixed !important;
+}
+
+table.fwpr-added-file > colgroup > col:nth-child(-n + 2),
+table.fwpr-added-file > :is(thead, tbody, tfoot) > tr > .fwpr-empty-left {
+  display: none !important;
+}
+
+table.fwpr-added-file > colgroup > col:nth-child(3) {
+  width: 56px !important;
+}
+
+table.fwpr-added-file > colgroup > col:nth-child(4) {
+  width: auto !important;
+}
+
+table.fwpr-added-file > tbody > tr > :is(.blob-num, .diff-line-number) {
+  width: 56px !important;
+  min-width: 56px !important;
+}
+
+table.fwpr-added-file > tbody > tr > :is(.blob-code, .right-side-diff-cell) {
+  width: auto !important;
+}

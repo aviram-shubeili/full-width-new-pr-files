@@ -1,0 +1,4 @@
+node_modules/
+.playwright-cli/
+test-results/
+dist/
